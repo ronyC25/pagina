@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/portafolio/style/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <center>
+        <div class="ingreso">
+            <h2 style="color: aliceblue;"><b>Registro de Usuarios</b></h2>
+            <form id="userForm">
+                <input type="text" id="name" placeholder="Nombre" required class="cu_entrada"> <br>
+                <input type="text" id="apell" placeholder="Apellidos" required class="cu_entrada"> <br>
+                <input type="email" id="email" placeholder="Correo electrónico" required class="cu_entrada"> <br>
+                <input type="number" id="numero" placeholder="Número de teléfono" required class="cu_entrada"><br>
+                <input type="date" id="fecha" placeholder="Fecha de Ingreso" required class="cu_entrada"><br>
+                <input type="submit" value="Agregar Usuario">
+            </form>
+            <div id="userList"></div>
+        </div>    
+
+        <!--Funcion para editar los datos-->
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Editar Usuario</h2>
+              <form id="editForm">
+                <input type="hidden" id="editUserId">
+                <input type="text" id="editName" placeholder="Nombre" required class="cu_entrada"> <br>
+                <input type="text" id="editApell" placeholder="Apellidos" required class="cu_entrada"> <br>
+                <input type="email" id="editEmail" placeholder="Correo electrónico" required class="cu_entrada"> <br>
+                <input type="number" id="editNumero" placeholder="Número de teléfono" required class="cu_entrada"><br>
+                <input type="date" id="editFecha" placeholder="Fecha de Ingreso" required class="cu_entrada"><br>
+                <input type="submit" value="Guardar Cambios">
+              </form>
+            </div>
+          </div>
+
+        <!---->
+
+        <div class="tabla">
+            <div class="col-12">
+                <table id="userTable" class="table table-striped table-hover mt-3 text-center table-bordered">
+                    <thead>
+                        <tr>
+                            <th><b>Nombre</b></th>
+                            <th><b>Apellidos</b></th>
+                            <th><b>Correo electrónico</b></th>
+                            <th><b>Número de Teléfono</b></th>
+                            <th><b>Fecha de Ingreso</b></th>
+                            <th><b>Acciones</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows will be added here dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </center>
+    
+    <script src="script.js"></script>
+</body>
+</html>

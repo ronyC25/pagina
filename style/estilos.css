@@ -1,0 +1,43 @@
+body{
+    background-image: url(/portafolio/image/fondo4.jpg);
+}
+
+.estilo1{
+    color: brown;
+}
+
+.custom-card {
+    text-align: center;
+    width: 100px;  /* Ajusta el ancho según tus necesidades */
+    height: 100px; /* Ajusta la altura según tus necesidades */
+}
+
+.ingreso {
+    
+    text-align:center;
+    border: 5px outset red;
+    width: 70%;
+    background-image: url(/portafolio/image/fondo1.jpg);
+    border-width: 5px;
+    border-color:honeydew;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.cu_entrada {
+    width: 60%;
+}
+
+.tabla {
+    vertical-align: middle;
+    background-color: beige;
+    border-color: rgb(255, 0, 0);
+    border-width: 5px;
+    
+}
+
+.columnas 
+{
+    background-color: darkgrey;
+    width: 100%;
+}
