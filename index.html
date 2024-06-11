@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="crud.php">
+
+</head>
+<body>
+    <!--Menu de inicio-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" >MI PORTAFOLIO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Estudios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://sigeun.unam.edu.pe/modulos/modaulavirtual/seguridad/login">Aula virtual</a></li>
+                  <li><a class="dropdown-item" href="https://sigeun.unam.edu.pe/modulos/modestudiante/#/sessions/signin">Modulo Estudiante</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://www.facebook.com/?_rdc=1&_rdr">Facebook</a></li>
+                  <li><a class="dropdown-item" href="crud.php">Registro de Usuarios</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Hola</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <!--Inia el contenido de la pagina principal-->
+      <div class="container-fluid text-center">
+        <img src="/portafolio//image/cuy.png" alt="">
+      </div>
+      <div class="container-fluid bg-primary text-white border-black">
+        <h2>Informacion general</h2>
+        <p>Soy un ingeniero de sistemas apasionado por la tecnología y la innovación. Poseo sólida experiencia en la concepción, desarrollo y gestión de sistemas de información, así como en la integración de tecnologías emergentes. Mi experiencia cubre el desarrollo de la lógica, la administración de redes y la ciberseguridad. Je m'efforce de encontrar des soluciones eficientes y eficaces a des problemas complejos, siempre para lograr el acento en la optimización y la mejora continúan.</p>
+      </div>
+      <!--CARTAS DE AREAS DE INTERES -->
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <div class="card border-5 border-warning">
+                    <img src="/portafolio/image/java.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><h2><b>JavaScript</b></h2></h5>
+                      <p class="card-text">JavaScript es un lenguaje de programación que los desarrolladores utilizan para hacer páginas web interactivas.</p>
+                      <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" class="btn btn-primary">Mas Informacion</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card border-5 border-danger">
+                    <img src="/portafolio/image/html.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><h2><b>HTML</b></h2></h5>
+                      <p class="card-text">El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos</p>
+                      <a href="https://developer.mozilla.org/es/docs/Web/HTML" class="btn btn-primary">Mas Informacion</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card border-5 border-primary">
+                    <img src="/portafolio/image/css.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><h2><b>CSS</b></h2></h5>
+                      <p class="card-text">Es un lenguaje que se usa para estilizar elementos escritos en un lenguaje de marcado como HTML.</p>
+                      <a href="https://developer.mozilla.org/es/docs/Web/CSS" class="btn btn-primary">Mas Informacion</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+
+
+      <footer>
+        <div class="container-fluid bg-dark p-4 text-center mt-5">
+          <div class="row">
+            <div class="col"><a href="https://www.lavanguardia.com/historiayvida/historia-contemporanea/20200407/48271683024/yamato-japon-iigm-acodarazados-hundimiento-guerra-naval-eeuu.html" class="text-decoration-none" >YAMATO</a></div>
+            <div class="col"><a href="https://www.infobae.com/historias/2022/05/27/el-hundimiento-del-acorazado-bismarck-el-monstruo-marino-de-los-nazis-que-hitler-creia-invencible/" class="text-decoration-none" >BISMACRK</a></div>
+            <div class="col"><a href="https://www.eurasia1945.com/armas/mar/uss-iowa/" class="text-decoration-none" >IOWA</a></div>
+            <div class="col"><a href="https://www.youtube.com/watch?v=5-OHIrNb-l4" class="text-decoration-none" >VIDEO1</a></div>
+            <div class="col"><a href="https://www.youtube.com/watch?v=667Pxo_hSCQ" class="text-decoration-none" >VIDEO2</a></div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
